@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="../bootstrap.min.css" rel="stylesheet" /> 
+    <script src="../angular.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    
+    <script src="empService.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="emp">
+        <label>Enter Employee no:</label>
+        <input type="text" ng-model="searchbyempno" />
+        
+        <input type="button" class="btn btn-primary" value="Search" ng-click="doSearch()" />
+    </div>
+</body>
+</html>

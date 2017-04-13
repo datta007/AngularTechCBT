@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html data-ng-app="AngularApp">
+<head>
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <title>AngularJS - Routing</title> 
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="DemoController.js"></script>
+    <script src="Page1/Page1Controller.js"></script>
+    <script src="Page2/Page2Controller.js"></script>
+    <script src="Page3/Page3Controller.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div ng-controller="demoController" class="container">
+            <p><b>Hello World - Routing Example</b></p>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="nav">
+                        <li><a href="#/page1"> Page 1 </a></li>
+                        <li><a href="#/page2"> Page 2 </a></li>
+                        <li><a href="#/page3/567"> Page 3 </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9"> 
+                    <div ng-view></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

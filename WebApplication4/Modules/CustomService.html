@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>    
+    <script src="angular.min.js"></script>
+    <script src="CustomService/customService.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="emp">
+    The Value of "a" variable is : {{a}} <br />
+    The Value of "b" variable is : {{b}} <br />
+    Sum is: {{sum}}
+        <hr />
+        <input type="button" ng-click="doSum()"value="Calculate"/>
+    </div>
+
+</body>
+</html>
